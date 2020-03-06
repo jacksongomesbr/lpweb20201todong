@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'lpweb2020todong';
+  titulo = null;
+  tarefas = [
+    'Programar gerenciador de tarefas'
+  ];
+
+  adicionar() {
+    this.tarefas.push(this.titulo);
+    this.titulo = null;
+  }
 }
